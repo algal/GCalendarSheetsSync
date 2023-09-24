@@ -1,0 +1,17 @@
+* log
+
+** [2023-09-23 Sat 19:43] setting up clasp
+
+did =clasp login=.
+
+On the web, in Project Settings, found SCript ID.
+
+ScriptID: 1NDwTuY_XSv_svkT0Fry3JwHCwS25SPYMfbKBafitzZ-Q-NzLE8MDMf0f
+
+#+begin_quote
+clasp clone 1NDwTuY_XSv_svkT0Fry3JwHCwS25SPYMfbKBafitzZ-Q-NzLE8MDMf0f
+#+end_quote
+
+init repo
+
+
