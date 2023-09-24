@@ -1,0 +1,413 @@
+BEGIN:VCALENDAR
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Cine Club 2023-2024
+X-WR-TIMEZONE:America/Los_Angeles
+X-WR-CALDESC:Film screenings of Cine Club 2023-2024 at the Randall Museum\,
+  In San Francisco.\n\nhttps://artandfilm.org/current
+BEGIN:VEVENT
+DTSTART:20240120T030000Z
+DTEND:20240120T040000Z
+DTSTAMP:20230924T190257Z
+UID:CSVConvert211219fb21ff80be414e2101813a1cc1
+CREATED:19000101T120000Z
+DESCRIPTION:This comedic film follows a mother and son living in East Germa
+ ny in the late 1980’s. When the mother enters a months-long coma\, she miss
+ es the fall of the Berlin Wall and the collapse of communism. But when she 
+ wakes\, her son resolves to conceal this information in fear that she’ll su
+ ffer fatal shock.
+LAST-MODIFIED:20230916T211815Z
+LOCATION:199 Museum Way\, San Francisco\, CA 94114
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Cine Club: GOOD BYE\, LENIN! (Wolfgang Becker\, 2003)
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20240127T030000Z
+DTEND:20240127T040000Z
+DTSTAMP:20230924T190257Z
+UID:CSVConvert2147cca30cf1d61705412f159eb294be
+CREATED:19000101T120000Z
+DESCRIPTION:An illuminating\, thoughtful and detailed account of Hitler's l
+ ast days in his Berlin bunker as the Soviet army closes in. This film captu
+ res his paranoia\, the delusion and will to destroy with chilling precision
+ . Bruno Ganz’s performance is not to be missed.\nWarning: realistic war vio
+ lence
+LAST-MODIFIED:20230916T211815Z
+LOCATION:199 Museum Way\, San Francisco\, CA 94114
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Cine Club: DOWNFALL (Oliver Hirschbiegel\, 2004)
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20240113T030000Z
+DTEND:20240113T040000Z
+DTSTAMP:20230924T190257Z
+UID:CSVConvert28af449037ef60b24e3224523d34802c
+CREATED:19000101T120000Z
+DESCRIPTION:This off-kilter romantic comedy is about a thief and a pickpock
+ et who team up to con the owner of a perfume company for her fortune. Regar
+ ded as one of the best films of all time\, we feel this pick will win you o
+ ver\, too. Presented by Art & Film staff Jack Hamm.
+LAST-MODIFIED:20230916T211815Z
+LOCATION:199 Museum Way\, San Francisco\, CA 94114
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Cine Club: TROUBLE IN PARADISE (Ernst Lubitsch\, 1932)
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20240217T030000Z
+DTEND:20240217T040000Z
+DTSTAMP:20230924T190257Z
+UID:CSVConverta6ee419ebf4af4d3175f614c6483f329
+CREATED:19000101T120000Z
+DESCRIPTION:Fed up with consumerist America\, a bold and headstrong invento
+ r moves his family down to the Mosquito Coast for a “simpler” way of life. 
+ When he purchases a town on a whim\, he decides to create his version of a 
+ utopia\, with disastrous results. Presented by Art and Film staff Amina Ain
+ eb.
+LAST-MODIFIED:20230916T211815Z
+LOCATION:199 Museum Way\, San Francisco\, CA 94114
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Cine Club: THE MOSQUITO COAST (Peter Weir\, 1986)
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20231104T020000Z
+DTEND:20231104T030000Z
+DTSTAMP:20230924T190257Z
+UID:CSVConverta941c589376cc83d3e6e6f36161a1807
+CREATED:19000101T120000Z
+DESCRIPTION:And now for something completely different! A series of the mos
+ t bizarre scenes you’ll ever see\, connected by brilliant visual concepts\,
+  droll humor and a fertile imagination. Come and help us make sense of this
+  film that is as entertaining as it is puzzling. Presented by film mentor J
+ avier Briones.
+LAST-MODIFIED:20230916T211815Z
+LOCATION:199 Museum Way\, San Francisco\, CA 94114
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Cine Club: SONGS FROM THE SECOND FLOOR (Roy Andersson\, 2000)
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20231021T020000Z
+DTEND:20231021T030000Z
+DTSTAMP:20230924T190257Z
+UID:CSVConvertb13189db8f49204f76af6ecf0db74361
+CREATED:19000101T120000Z
+DESCRIPTION:In a strange world\, humans live in fear of the Traags\, giant 
+ blue humanoid looking aliens who treat them like animals. This experimental
+  sci-fi film forever changed the animation genre when it was released in th
+ e 70’s\, and we think it’ll make for a rich discussion.
+LAST-MODIFIED:20230916T211815Z
+LOCATION:199 Museum Way\, San Francisco\, CA 94114
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Cine Club: FANTASTIC PLANET (René Laloux\, 1973)
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20231014T020000Z
+DTEND:20231014T030000Z
+DTSTAMP:20230924T190257Z
+UID:CSVConvertc4b45086482c924b6f2d49e0f97c5229
+CREATED:19000101T120000Z
+DESCRIPTION:This jewel of the French “new wave” changed the face of film. T
+ he tale of three friends trapped in a classic love triangle whose initially
+  carefree relationships are periled by jealousy. Presented by film mentor M
+ aëlle Le Lingé.
+LAST-MODIFIED:20230916T211815Z
+LOCATION:199 Museum Way\, San Francisco\, CA 94114
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Cine Club: JULES ET JIM (François Truffaut\, 1962)
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20231202T030000Z
+DTEND:20231202T040000Z
+DTSTAMP:20230924T190257Z
+UID:CSVConvertd57130544f08591d708b523eb53f44bb
+CREATED:19000101T120000Z
+DESCRIPTION:Five sisters living in a small village in Turkey find their fre
+ edom suddenly taken away after a day at the beach ends on a sour note. Afte
+ rwards\, when they are forbidden to leave the house\, they turn to each oth
+ er to find joy and meaning in their lives. A touching\, character driven fi
+ lm about what it means to become a woman in a patriarchal world.
+LAST-MODIFIED:20230916T211815Z
+LOCATION:199 Museum Way\, San Francisco\, CA 94114
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Cine Club: MUSTANG (Deniz Gamze Ergüven\, 2015)
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230930T020000Z
+DTEND:20230930T030000Z
+DTSTAMP:20230924T190257Z
+UID:CSVConvertd5abd3914969fd00c97aef11adf207af
+CREATED:19000101T120000Z
+DESCRIPTION:The simple tale of a young innocent who is sold to the travelin
+ g circus by her mother and forced to work as an assistant to a brutish stro
+ ngman. It's a tough life on the road\, and the struggle to make a living ta
+ kes its toll on both of them. Filled with compelling\, vivid performances\,
+  particularly by lead actress Giulietta Masina.
+LAST-MODIFIED:20230916T211815Z
+LOCATION:199 Museum Way\, San Francisco\, CA 94114
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Cine Club: LA STRADA (Federico Fellini\, 1954)
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20240309T030000Z
+DTEND:20240309T040000Z
+DTSTAMP:20230924T190257Z
+UID:CSVConvertdf74c770bfc1ee564dab56b0991a4d28
+CREATED:19000101T120000Z
+DESCRIPTION:Two young women named Marie decide that in a world filled with 
+ entitlement\, they deserve to feel entitled too. This sets them off into a 
+ series of pranks\, sometimes to destructive ends. Filled with satire\, deca
+ dent nihilism\, and unapologetic whimsy\, this film is simply a visual feas
+ t.
+LAST-MODIFIED:20230916T211815Z
+LOCATION:199 Museum Way\, San Francisco\, CA 94114
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Cine Club: DAISIES (Věra Chytilová\, 1966)
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20231209T030000Z
+DTEND:20231209T040000Z
+DTSTAMP:20230924T190257Z
+UID:CSVConverte36107ec9b82a3ee1a9e812a3e9f1348
+CREATED:19000101T120000Z
+DESCRIPTION:A wealthy woman hits something with her car while driving on a 
+ remote dirt road in Argentina. Unsure if she has killed a person or an anim
+ al\, she drives off\, but the guilt of the incident follows her everywhere 
+ she goes. A tense psychological mystery with plenty of social commentary.
+LAST-MODIFIED:20230916T211815Z
+LOCATION:199 Museum Way\, San Francisco\, CA 94114
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Cine Club: THE HEADLESS WOMAN (Lucrecia Martel\, 2008)
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20231007T020000Z
+DTEND:20231007T030000Z
+DTSTAMP:20230924T190257Z
+UID:CSVConvertfaee86284ed51c7cc0fe0879f8b61395
+CREATED:19000101T120000Z
+DESCRIPTION:This wildly entertaining story about the world’s most dedicated
+  hotel concierge is possibly the finest from indie darling Wes Anderson. It
+ s visual style\, immaculate art direction and cornucopia of stars (too many
+  to list) will leave you in awe. A maverick artist at the height of his car
+ eer!
+LAST-MODIFIED:20230916T211815Z
+LOCATION:199 Museum Way\, San Francisco\, CA 94114
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Cine Club: GRAND BUDAPEST HOTEL (Wes Anderson\, 2014)
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20231111T030000Z
+DTEND:20231111T040000Z
+DTSTAMP:20230924T190257Z
+UID:CSVConvertfc7e47409d91ceab8abd6a5a5bae2f14
+CREATED:19000101T120000Z
+DESCRIPTION:A young nobleman makes a promise to Queen Elizabeth to never gr
+ ow old… and he doesn’t.  He lives for centuries without major incident unti
+ l\, after narrowly escaping death\, he wakes up as a woman! A remarkable ad
+ aptation of Virginia Wolfe’s novella that questions the very nature of gend
+ er.
+LAST-MODIFIED:20230916T211815Z
+LOCATION:199 Museum Way\, San Francisco\, CA 94114
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Cine Club: ORLANDO (Sally Potter\, 1992)
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20240330T020000Z
+DTEND:20240330T050000Z
+DTSTAMP:20230924T190257Z
+UID:CSVConvert1350255bba316e992b882c07a44d1ad2
+CREATED:19000101T120000Z
+DESCRIPTION:A visionary\, original love story like no other. Kieslowski’s f
+ inal films suggest that we are all connected through unseen forces. In this
+  story\, coincidence becomes a major theme as two lovers live parallel live
+ s that prepare them to finally meet.
+LAST-MODIFIED:20230916T212112Z
+LOCATION:199 Museum Way\, San Francisco\, CA 94114
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Cine Club: THREE COLOURS: RED (Krzysztof Kieślowski\, 1994)
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20240302T030000Z
+DTEND:20240302T060000Z
+DTSTAMP:20230924T190257Z
+UID:CSVConvert2d31bf54576fe4864eafbb002382da3d
+CREATED:19000101T120000Z
+DESCRIPTION:This film follows several young adults living in Hong Kong whos
+ e lives intersect through both romance and heartbreak. Like many of Wong’s 
+ films\, this is a multi-dimensional\, colorful\, and candid look at human l
+ oneliness and the yearning for connection.
+LAST-MODIFIED:20230916T212112Z
+LOCATION:199 Museum Way\, San Francisco\, CA 94114
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Cine Club: DAYS OF BEING WILD (Wong Kar Wai\, 1990)
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20240323T020000Z
+DTEND:20240323T050000Z
+DTSTAMP:20230924T190257Z
+UID:CSVConvert443fed7c69d93e692ac51814e2ef52c0
+CREATED:19000101T120000Z
+DESCRIPTION:The director’s first film\, which began the avalanche of road f
+ ilms about rebellious youth who terrorize the countryside.  Based on a true
+  story it mixes horror with a cool style that only Malick could create.
+LAST-MODIFIED:20230916T212112Z
+LOCATION:199 Museum Way\, San Francisco\, CA 94114
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Cine Club: BADLANDS (Terrence Malick\, 1973)
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20240316T020000Z
+DTEND:20240316T050000Z
+DTSTAMP:20230924T190257Z
+UID:CSVConvertb4caf274f25e94a18faa19584cd7854c
+CREATED:19000101T120000Z
+DESCRIPTION:A historical drama about three sisters and their servant who mu
+ st confront the reality of one sister’s terminal illness. This film examine
+ s faith\, gender\, and grief with great care and detail. One of Bergman’s f
+ inest.
+LAST-MODIFIED:20230916T212112Z
+LOCATION:199 Museum Way\, San Francisco\, CA 94114
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Cine Club: CRIES AND WHISPERS (Ingmar Bergman\, 1972)
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20240210T030000Z
+DTEND:20240210T060000Z
+DTSTAMP:20230924T190257Z
+UID:CSVConvertb863660e0bd7b7c1cc374c37e6931543
+CREATED:19000101T120000Z
+DESCRIPTION:This classic film noir follows an insurance salesman who finds 
+ himself in the center of a murder plot when he falls for a femme fatale pla
+ nning to kill her husband for his money. But their affair soon arouses susp
+ icion from his colleague\, who resolves to expose their crime.
+LAST-MODIFIED:20230916T212112Z
+LOCATION:199 Museum Way\, San Francisco\, CA 94114
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Cine Club: DOUBLE INDEMNITY (Billy Wilder\, 1944)
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20231216T030000Z
+DTEND:20231216T060000Z
+DTSTAMP:20230924T190257Z
+UID:CSVConvertbe41ea8fd5174986c1b48f664de70679
+CREATED:19000101T120000Z
+DESCRIPTION:One Broadway star rises and another falls\; turns out the silve
+ r screen is full of fangs and claws. One of the greats of Hollywood’s golde
+ n age\, full of terrific performances and a grim-but-glamorous look at life
+  in the theater.
+LAST-MODIFIED:20230916T212112Z
+LOCATION:199 Museum Way\, San Francisco\, CA 94114
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Cine Club: ALL ABOUT EVE (Joseph L. Mankiewicz\, 1950)
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20231118T030000Z
+DTEND:20231118T060000Z
+DTSTAMP:20230924T190257Z
+UID:CSVConvertca668abbf3a31ce8e71cebbf309495cd
+CREATED:19000101T120000Z
+DESCRIPTION:Two Senegalese youths resort to theft as a means to achieve the
+ ir dream of going to Paris\, but it turns out it’s easier said than done. T
+ his landmark film of West African cinema received the International Critics
+  Award when it showed at Cannes in the 70’s\, and it’s been well loved ever
+  since.
+LAST-MODIFIED:20230916T212112Z
+LOCATION:199 Museum Way\, San Francisco\, CA 94114
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Cine Club: TOUKI BOUKI (Djibril Diop Mambéty\, 1973)
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230923T020000Z
+DTEND:20230923T050000Z
+DTSTAMP:20230924T190257Z
+UID:CSVConverte32499f1b457061aae21eb0939bcb000
+CREATED:19000101T120000Z
+DESCRIPTION:This mesmerizing thriller set in a dystopian future follows Har
+ rison Ford as a burnt-out police detective who is forced to take one last a
+ ssignment: hunting down four deadly androids who have blended in among Los 
+ Angeles’ human population. Its vision of the future is dazzling\, but its e
+ xploration of what it means to be human is what makes this film a classic.
+LAST-MODIFIED:20230916T212112Z
+LOCATION:199 Museum Way\, San Francisco\, CA 94114
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Cine Club: BLADERUNNER (Ridley Scott\, 1982)
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20240203T030000Z
+DTEND:20240203T060000Z
+DTSTAMP:20230924T190257Z
+UID:CSVConvertf4c3cda4a41c8d5a8efa700ec906fca7
+CREATED:19000101T120000Z
+DESCRIPTION:Dido Elizabeth Belle\, the mixed-race daughter of an African sl
+ ave and a British admiral\, is left in the care of her grandfather\, a powe
+ rful judge who is now forced to confront his prejudices. Based on historica
+ l lives\, this film is a fascinating look at issues of race in 18th century
+  England and one young woman’s role in the campaign to abolish slavery.
+LAST-MODIFIED:20230916T212112Z
+LOCATION:199 Museum Way\, San Francisco\, CA 94114
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Cine Club: BELLE (Amma Asante\, 2013)
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20231028T020000Z
+DTEND:20231028T050000Z
+DTSTAMP:20230924T190257Z
+UID:CSVConvertfe0db03277e2bbcb240195be201a20ed
+CREATED:19000101T120000Z
+DESCRIPTION:Let’s ring in the Halloween weekend with this pulp sci-fi class
+ ic! In a fictional California town\, aliens quietly seek to invade the huma
+ n race by growing doppelgangers to replace the town’s residents. When a loc
+ al doctor notices something amiss\, he and his friends vow to stop the inva
+ sion. Presented by screenwriter Sam Hamm.
+LAST-MODIFIED:20230916T212112Z
+LOCATION:199 Museum Way\, San Francisco\, CA 94114
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Cine Club: INVASION OF THE BODY SNATCHERS (Don Siegel\, 1956)
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR
