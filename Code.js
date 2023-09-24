@@ -9,7 +9,7 @@
  * It dynamically recognizes the column headers, allowing for flexible
  * column ordering and optional columns. The column names it
  * recognizes are "EventId", "Event Name", "Event Start", "Event End",
- * and "Description".
+ * "Description", and "Location".
  * 
  * - If ACTION is "CREATE" and EventId is empty, creates a new event and populates EventId in the sheet.
  * 
@@ -82,7 +82,8 @@ function updateEventsFromSheet(sheetName, calendarName, startDate, endDate) {
                 end: {
                     'dateTime': colMap["Event End"] !== undefined ? new Date(row[colMap["Event End"]]).toISOString() : new Date().toISOString()
                 },
-                description: colMap["Description"] !== undefined ? row[colMap["Description"]] : ""
+                description: colMap["Description"] !== undefined ? row[colMap["Description"]] : "",
+                location: colMap["Location"] !== undefined ? row[colMap["Location"]] : ""
             };
             
             var createdEvent = Calendar.Events.insert(newEvent, calendarId);
@@ -127,6 +128,10 @@ function updateEventsFromSheet(sheetName, calendarName, startDate, endDate) {
                 event.description = row[colMap["Description"]];
             }
 
+            if (colMap["Location"] !== undefined && row[colMap["Location"]]) {
+                event.location = row[colMap["Location"]];
+            }
+
             // Update the event in the calendar
             Calendar.Events.update(event, calendarId, eventId);
         }
@@ -140,19 +145,31 @@ function fancyUpdate() {
 }
 
 
-function exportEventsToSheetNew(sheetName, calendarName, startDate, endDate) {
+function exportEventsToSheet(calendarName, startDate, endDate) {
     // Access the current spreadsheet and the specified sheet
     var spreadsheet = SpreadsheetApp.getActiveSpreadsheet();
-    var sheet = spreadsheet.getSheetByName(sheetName);
+    var sheet = spreadsheet.getSheetByName(calendarName);
     
     // If the sheet doesn't exist, create it
     if (!sheet) {
-        sheet = spreadsheet.insertSheet(sheetName);
+        sheet = spreadsheet.insertSheet(calendarName);
+    } else {
+        // If a sheet with calendarName already exists, find a unique name and create a new sheet
+        var count = 2;
+        while(sheet) {
+            var newName = calendarName + ' (' + count + ')';
+            sheet = spreadsheet.getSheetByName(newName);
+            if(!sheet) {
+                sheet = spreadsheet.insertSheet(newName);
+                break;
+            }
+            count++;
+        }
     }
   
     // Set headers
-//    sheet.clear();
-    sheet.appendRow(['EventId', 'Event Name', 'Event Start', 'Event End', 'Description']);
+    sheet.clear();
+    sheet.appendRow(['EventId', 'Event Name', 'Event Start', 'Event End', 'Description', 'Location']);
   
     // Get the calendar by its name
     var calendars = Calendar.CalendarList.list();
@@ -193,8 +210,9 @@ function exportEventsToSheetNew(sheetName, calendarName, startDate, endDate) {
             var eventStart = event.start.dateTime || event.start.date;  // Handle all-day events
             var eventEnd = event.end.dateTime || event.end.date;
             var description = event.description || "";
+            var location = event.location || "";
             
-            sheet.appendRow([eventId, eventName, eventStart, eventEnd, description]);
+            sheet.appendRow([eventId, eventName, eventStart, eventEnd, description, location]);
             count++;
         }
       
@@ -211,9 +229,13 @@ function exportEventsToSheetNew(sheetName, calendarName, startDate, endDate) {
     Logger.log('Number of events exported: ' + count);
     Logger.log('Name of the calendar accessed: ' + calendarName);
     Logger.log('Name of the spreadsheet: ' + spreadsheet.getName());
-    Logger.log('Name of the sheet: ' + sheetName);
+    Logger.log('Name of the sheet: ' + sheet.name);
 }
 
-function fancyExport() {
-  exportEventsToSheet("Events2","Cine Club 2023-2024")
+function exportCineClub() {
+  exportEventsToSheet("Cine Club 2023-2024")
+}
+
+function exportMyEvents() {
+    exportEventsToSheet("events","2023-11-24","2023-12-25")
 }
