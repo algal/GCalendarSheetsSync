@@ -14,4 +14,18 @@ clasp clone 1NDwTuY_XSv_svkT0Fry3JwHCwS25SPYMfbKBafitzZ-Q-NzLE8MDMf0f
 
 init repo
 
+[[https://developers.google.com/apps-script/guides/v8-runtime][Note on supported version of JS]]
+
+
+** [2023-09-24 Sun 11:29] working with clasp
+
+=clasp pull= seems to just update local from remote.
+
+=clasp push=:
+- didn't work at first.
+- needed me to enable the Goolge Apps SCript API. DONE.
+- now works
+
+Adding comments
+
 

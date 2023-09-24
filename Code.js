@@ -1,4 +1,33 @@
-function updateEventsFromSheetNew(sheetName, calendarName, startDate, endDate) {
+/**
+ * Updates Google Calendar events based on the
+ * information from a specified Google Sheet.  
+ *
+ * The function reads each row of the sheet and performs an action
+ * 'CREATE', 'DELETE', or 'UPDATE' on the Calendar, based on the
+ * 'ACTION' column in the Sheet.
+ *
+ * It dynamically recognizes the column headers, allowing for flexible
+ * column ordering and optional columns. The column names it
+ * recognizes are "EventId", "Event Name", "Event Start", "Event End",
+ * and "Description".
+ * 
+ * - If ACTION is "CREATE" and EventId is empty, creates a new event and populates EventId in the sheet.
+ * 
+ * - If ACTION is "DELETE", deletes the event with the corresponding EventId from the calendar.
+ * 
+ * - For any other value of ACTION, when EventId describes an existing event, it updates the value of any non-empty field.
+ * 
+ * @function
+ * @name updateEventsFromSheet
+ * @param {string} sheetName - The name of the sheet/tab within the spreadsheet to read data from.
+ * @param {string} calendarName - The name of the Google Calendar to update events in.
+ * @param {string} [startDate] - Optional. The start date to process events after (inclusive). Must be in a recognizable date string format, e.g., "YYYY-MM-DD".
+ * @param {string} [endDate] - Optional. The end date to process events before (inclusive). Must be in a recognizable date string format, e.g., "YYYY-MM-DD".
+ * 
+ * @example
+ * updateEventsFromSheet("Events", "My Calendar", "2023-01-01", "2023-12-31");
+ */
+function updateEventsFromSheet(sheetName, calendarName, startDate, endDate) {
     var spreadsheet = SpreadsheetApp.getActiveSpreadsheet();
     var sheet = spreadsheet.getSheetByName(sheetName);
 
@@ -107,7 +136,7 @@ function updateEventsFromSheetNew(sheetName, calendarName, startDate, endDate) {
 }
 
 function fancyUpdate() {
-  updateEventsFromSheetNew("Events2","Cine Club 2023-2024")
+  updateEventsFromSheet("Events2","Cine Club 2023-2024")
 }
 
 
@@ -187,77 +216,4 @@ function exportEventsToSheetNew(sheetName, calendarName, startDate, endDate) {
 
 function fancyExport() {
   exportEventsToSheet("Events2","Cine Club 2023-2024")
-}
-
-
-
-function populateSheetWithEvents() {
-  var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName("Events");
-
-  // Specify the calendar by name
-  var calendar = CalendarApp.getCalendarsByName("Cine Club 2023-2024")[0];
-
-  // Set headers
-  sheet.appendRow(["Event ID", "Event Name", "Event Start", "Event End"]);
-
-  // Get events for the next 2 years
-  var now = new Date();
-  var twoYearsFromNow = new Date(now);
-  twoYearsFromNow.setFullYear(now.getFullYear() + 2);
-  var events = calendar.getEvents(now, twoYearsFromNow);
-
-  // Loop through events and append to sheet
-  for (var i = 0; i < events.length; i++) {
-    if (events[i].getTitle().startsWith("Cine Club")) {
-      var eventId = events[i].getId();
-      var eventTitle = events[i].getTitle();
-      var eventStart = events[i].getStartTime();
-      var eventEnd = events[i].getEndTime();
-
-      sheet.appendRow([eventId, eventTitle, eventStart, eventEnd]);
-    }
-  }
-}
-
-function updateEventsFromSheet() {
-  Logger.log("beg: updateEventsFromSheet");
-  var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName("Events");
-  var rows = sheet.getRange("A2:D" + sheet.getLastRow()).getValues();
-
-  // Specify the calendar by name
-  var calendar = CalendarApp.getCalendarsByName("Cine Club 2023-2024")[0];
-
-  for (var i = 0; i < rows.length; i++) {
-    var row = rows[i];
-    var eventId = row[0];
-    var eventTitle = row[1];
-    var eventStart = new Date(row[2]);
-    var eventEnd = new Date(row[3]);
-
-    // Fetch the event from Google Calendar using ID
-    var eventsMatchingTime = calendar.getEvents(eventStart, new Date(eventEnd.getTime() + 1));
-    var eventsMatchingId = eventsMatchingTime.filter(function (e) { return e.getId() == eventId });
-    if (eventsMatchingId.length == 0) {
-      Logger.log("Event not found with ID: " + eventId)
-    }
-    else if (eventsMatchingId.length > 1) {
-      Logger.log("Multiple events found with ID. Not updating: " + eventId)
-    }
-    else {
-      var event = eventsMatchingId[0];
-      if (event.getTitle() == eventTitle && event.getStartTime() == eventStart && event.getEndTime() == eventEnd) {
-        Logger.log("Not updating event since no value changed for eventID: " + eventId);
-      }
-      else {
-        Logger.log("updating event %s with new title %s: ", eventId, eventTitle)
-        Logger.log("old eventTit");
-        event.setTitle(eventTitle);
-        event.setTime(eventStart, eventEnd);
-      }
-    }
-  }
-}
-
-function testLogging() {
-  Logger.log("start: testLogging()");
 }
