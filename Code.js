@@ -86,11 +86,13 @@ function updateEventsFromSheet(sheetName, calendarName, startDate, endDate) {
                 location: colMap["Location"] !== undefined ? row[colMap["Location"]] : ""
             };
             
+            Logger.log("Creating new event");
             var createdEvent = Calendar.Events.insert(newEvent, calendarId);
             sheet.getRange(i + 1, colMap["EventId"] + 1).setValue(createdEvent.id); // Populate EventId in the sheet
 
         } else if (action === "DELETE") {
             try {
+                Logger.log("Deleting eventID: " + eventId);
                 Calendar.Events.remove(calendarId, eventId);
             } catch (e) {
                 Logger.log('Error deleting the event with EventID: ' + eventId + '. Error: ' + e.toString());
@@ -133,6 +135,7 @@ function updateEventsFromSheet(sheetName, calendarName, startDate, endDate) {
             }
 
             // Update the event in the calendar
+            Logger.log('About to update the calendar for eventID: ' + eventId);
             Calendar.Events.update(event, calendarId, eventId);
         }
     }
