@@ -18,7 +18,7 @@ Within the Apps Script editor, in Project Settings, ensure that "Enable Chrome V
 
 Within the Apps Script editor, in the Editor component, copy the code into the Code.js file.
 
-Alternatively, instead of copy/pasting, you can use a dedicated tool like `clasp` to manage AppsScript code from the command line. iirc, that also requires enabling the Google APps Script API.
+(Alternatively, instead of copy/pasting, you can use a dedicated tool like `clasp` to manage AppsScript code from the command line. iirc, that also requires enabling the Google APps Script API by going to https://script.google.com/home/usersettings, by doing a login, etc..)
 
 ## How to use
 
