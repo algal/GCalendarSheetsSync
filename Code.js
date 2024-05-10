@@ -7,7 +7,7 @@
  * 'ACTION' column in the Sheet.
  *
  * It dynamically recognizes the column headers, allowing for flexible
- * column ordering and optional columns. The column names it
+ * column ordering and optional columns. The column headers it
  * recognizes are "EventId", "Event Name", "Event Start", "Event End",
  * "Description", and "Location".
  * 
@@ -140,11 +140,16 @@ function updateEventsFromSheet(sheetName, calendarName, startDate, endDate) {
     Logger.log('Process completed.');
 }
 
-function fancyUpdate() {
-  updateEventsFromSheet("Events2","Cine Club 2023-2024")
-}
-
-
+/**
+ * Exports events from the specified calendar into a new sheet of the current Spreadsheet, optionally filtering by date.
+ *
+ *
+ * @function
+ * @name exportEventsToSheet
+ * @param {string} calendarName - The name of the Google Calendar to export events from.
+ * @param {string} [startDate] - Optional. The start date to process events after (inclusive). Must be in a recognizable date string format, e.g., "YYYY-MM-DD".
+ * @param {string} [endDate] - Optional. The end date to process events before (inclusive). Must be in a recognizable date string format, e.g., "YYYY-MM-DD".
+*/
 function exportEventsToSheet(calendarName, startDate, endDate) {
     // Access the current spreadsheet and the specified sheet
     var spreadsheet = SpreadsheetApp.getActiveSpreadsheet();
@@ -232,9 +237,16 @@ function exportEventsToSheet(calendarName, startDate, endDate) {
     Logger.log('Name of the sheet: ' + sheet.name);
 }
 
+/// entry points
+
 function exportCineClub() {
   exportEventsToSheet("Cine Club 2023-2024")
 }
+
+function fancyUpdate() {
+    updateEventsFromSheet("Cine Club 2023-2024","Cine Club 2023-2024")
+}
+
 
 function exportMyEvents() {
     exportEventsToSheet("events","2023-11-24","2023-12-25")
