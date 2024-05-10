@@ -27,10 +27,10 @@ function ensureISOString(d) {
  * - If ACTION is "CREATE" and EventId is empty, creates a new event and populates EventId in the sheet.
  * 
  * - If ACTION is "DELETE", deletes the event with the corresponding EventId from the calendar.
+ *
+ * - If ACTION is "SKIP", do nothing.
  * 
- * - If ACTION is "SKIP", nothing happens.
- * 
- * - For any other value of ACTION, when EventId describes an existing event, it updates the value of any non-empty field.
+ * - If ACTION is "UPDATE", when EventId describes an existing event, it updates the value of any non-empty field.
  * 
  * @function
  * @name updateEventsFromSheet
@@ -123,10 +123,9 @@ function updateEventsFromSheet(sheetName, calendarName, startDate, endDate) {
             continue;
 
         } else if (action === 'SKIP') { 
-          Logger.log("SKIPping eventID: " + eventId);
-        }
-        else {
-          Logger.log("Did not find CREATE or DELETE. So trying to UPDATE based on eventId");
+            Logger.log("SKIPping eventID: " + eventId);
+        } else  if (action === 'UPDATE') { 
+            Logger.log("So trying UPDATE based on eventId");
             // Check if the event exists in the calendar
             var event;
             try {
@@ -164,6 +163,9 @@ function updateEventsFromSheet(sheetName, calendarName, startDate, endDate) {
             // Update the event in the calendar
             Logger.log('About to update the calendar for eventID: ' + eventId);
             Calendar.Events.update(event, calendarId, eventId);
+        }
+        else {
+            Logger.log("NO action found. doing nothing")
         }
     }
 
