@@ -16,7 +16,7 @@ Within the App Script editor, enable Calendar Advanced Services -- specifically,
 
 Copy the Code.js into the app editor.
 
-Alternatively, insteasd of copy/pasting, you can use a dedicated tool like `clasp` to manage AppsScript code from the command line. iirc, that also requires enabling the Google APps Script API.
+Alternatively, instead of copy/pasting, you can use a dedicated tool like `clasp` to manage AppsScript code from the command line. iirc, that also requires enabling the Google APps Script API.
 
 ## How to use
 
