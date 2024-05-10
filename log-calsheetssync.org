@@ -29,3 +29,7 @@ init repo
 Adding comments
 
 
+** [2024-05-10 Fri 14:41] todo
+
+todo: export into importable format, by adding ACTION column with value SKIP to exports
+
