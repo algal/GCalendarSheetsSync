@@ -12,9 +12,11 @@ Both functions take optional arguments for processing events only within a certa
 
 In Google Sheets, select the menu item Extensions / App Script.
 
-Within the App Script editor, enable Calendar Advanced Services -- specifically, Google Calendar API service version 3. Ensure it is using the runtime version V8.
+Within the Apps Script editor, in the left sidebar, select "Services +", and enable "Google Calendar API" version 3. (This is also known as Calendar Advances Services.) 
 
-Copy the Code.js into the app editor.
+Within the Apps Script editor, in Project Settings, ensure that "Enable Chrome V8 runtime" is enabled.
+
+Within the Apps Script editor, in the Editor component, copy the code into the Code.js file.
 
 Alternatively, instead of copy/pasting, you can use a dedicated tool like `clasp` to manage AppsScript code from the command line. iirc, that also requires enabling the Google APps Script API.
 
