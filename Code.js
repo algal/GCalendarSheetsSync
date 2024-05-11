@@ -206,7 +206,7 @@ function exportEventsToSheet(calendarName, startDate, endDate) {
   
     // Set headers
     sheet.clear();
-    sheet.appendRow(['EventId', 'Event Name', 'Event Start', 'Event End', 'Description', 'Location']);
+    sheet.appendRow(['ACTION','EventId', 'Event Name', 'Event Start', 'Event End', 'Description', 'Location']);
   
     // Get the calendar by its name
     var calendars = Calendar.CalendarList.list();
@@ -249,7 +249,7 @@ function exportEventsToSheet(calendarName, startDate, endDate) {
             var description = event.description || "";
             var location = event.location || "";
             
-            sheet.appendRow([eventId, eventName, eventStart, eventEnd, description, location]);
+            sheet.appendRow(['SKIP',eventId, eventName, eventStart, eventEnd, description, location]);
             count++;
         }
       
@@ -275,13 +275,13 @@ function exportEndgamesCalendarToSheet() {
   exportEventsToSheet("Endgames")
 }
 
-function exportEndgamesCalendarToSheetPartial() {
-    exportEventsToSheet("Endgames","2023-11-24","2023-12-25")
-}
+//function exportEndgamesCalendarToSheetPartial() {
+//    exportEventsToSheet("Endgames","2023-11-24","2023-12-25")
+//}
 
 function updateEndgamesCalenderFromSheet() {
   Logger.log("entry: updateEndgamesCalendarFromSheet");
-    updateEventsFromSheet("Endgames (2)","Endgames")
+    updateEventsFromSheet("Endgames","Endgames")
 }
 
 
