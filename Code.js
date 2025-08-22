@@ -88,6 +88,12 @@ function updateEventsFromSheet(sheetName, calendarName, startDate, endDate) {
         return;
     }
 
+    var countCREATE = 0;
+    var countDELETE = 0;
+    var countUPDATE = 0;
+    var countSKIP = 0;
+    var countUNKNOWN = 0;
+    
     // Loop through rows and process events based on ACTION
     for (var i = 1; i < data.length; i++) {
         var row = data[i];
@@ -112,11 +118,12 @@ function updateEventsFromSheet(sheetName, calendarName, startDate, endDate) {
             Logger.log("Creating new event with start date: " + startDate);
             var createdEvent = Calendar.Events.insert(newEvent, calendarId);
             sheet.getRange(i + 1, colMap["EventId"] + 1).setValue(createdEvent.id); // Populate EventId in the sheet
-
+            countCREATE += 1;
         } else if (action === "DELETE") {
             try {
                 Logger.log("Deleting eventID: " + eventId);
                 Calendar.Events.remove(calendarId, eventId);
+                countDELETE += 1;
             } catch (e) {
                 Logger.log('Error deleting the event with EventID: ' + eventId + '. Error: ' + e.toString());
             }
@@ -124,6 +131,7 @@ function updateEventsFromSheet(sheetName, calendarName, startDate, endDate) {
 
         } else if (action === 'SKIP') { 
             Logger.log("SKIPping eventID: " + eventId);
+                countSKIP += 1;
         } else  if (action === 'UPDATE') { 
             Logger.log("So trying UPDATE based on eventId");
             // Check if the event exists in the calendar
@@ -163,11 +171,19 @@ function updateEventsFromSheet(sheetName, calendarName, startDate, endDate) {
             // Update the event in the calendar
             Logger.log('About to update the calendar for eventID: ' + eventId);
             Calendar.Events.update(event, calendarId, eventId);
+            countUPDATE += 1;
         }
         else {
             Logger.log("NO action found. doing nothing")
+            countUNKNOWN += 1;
         }
     }
+    
+    Logger.log("countCREATE  : " + countCREATE  );
+    Logger.log("countDELETE  : " + countDELETE  );
+    Logger.log("countUPDATE  : " + countUPDATE  );
+    Logger.log("countSKIP    : " + countSKIP    );
+    Logger.log("countUNKNOWN : " + countUNKNOWN );
 
     Logger.log('Process completed.');
 }
