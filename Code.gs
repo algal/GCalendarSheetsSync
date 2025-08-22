@@ -300,4 +300,12 @@ function updateEndgamesCalenderFromSheet() {
     updateEventsFromSheet("Endgames","Endgames")
 }
 
+function exportHSProcessCalendarToSheet() {
+  exportEventsToSheet("HS Process Class of 2026")
+}
+
+function importToNewHSProcessCalendar() {
+  updateEventsFromSheet("HS Process Class of 2026", "HS Process Copy")
+}
+
 
